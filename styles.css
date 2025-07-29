@@ -1,0 +1,288 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+}
+
+/* .logo-left {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.logo-circle {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-left: 10px;
+}
+
+.logo-bg {
+  width: 80px;
+  height: 60px;
+  background: linear-gradient(45deg, #e8f5f3, #d4f1eb);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: -20px;
+} */
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  /* min-height: 100vh; */
+  padding: 10px 50px;
+  margin-top: 7rem;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+
+.section {
+  margin-bottom: 30px;
+}
+
+.menu-left,
+.menu-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h2 {
+  color: #3a6b5b;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+
+.footer-note {
+  grid-column: span 2;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* .logo-right {
+  position: absolute;
+  top: 10%;
+  right: 70px;
+  transform: translateX(20%);
+} */
+
+.logo-right {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-left {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  left: -30px; /* shift it slightly to the left */
+}
+
+.logo-circle {
+  width: 60px;
+  height: 60px;
+  /* border: 2px solid #333; */
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-left: 10px;
+}
+
+.logo-bg {
+  margin-left: -278px;
+  width: 80px;
+  height: 60px;
+  background: linear-gradient(45deg, #e8f5f3, #d4f1eb);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: -20px;
+}
+
+.circle-logo {
+  /* border: 3px double #333; */
+  border-radius: 50%;
+  padding: 30px 40px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .menu-container {
+    flex-direction: column;
+    padding: 100px 50px;
+  }
+
+  /* .logo-right {
+    position: static;
+    transform: none;
+    margin-top: 30px;
+    text-align: center;
+  } */
+}
+
+
+
+
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 2rem;
+  color: #222;
+}
+
+.menu-wrapper {
+  max-width: 1300px;
+  margin: auto;
+  padding-bottom: 5rem;
+}
+
+/* .menu-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3rem;
+} */
+
+.menu-column-left {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  padding-right: 25px;
+}
+
+.menu-column-left::after {
+  content: "";
+  position: absolute;
+  top: 100px; 
+  right: 0;
+  width: 1px;
+  height: 80%; 
+  background-color: #ccc;
+}
+
+.menu-column-right {
+  flex: 1;
+  min-width: 0;
+}
+
+.menu-heading {
+  color: #2f6e5c;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.menu-item {
+  margin-bottom: 1.5rem;
+}
+
+.menu-item h3 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.menu-item p {
+  margin: 0.3rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.menu-list,
+.cake-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.menu-list li,
+.cake-list li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  border-bottom: 1px dashed #eee;
+}
+
+.add-ons h4 {
+  font-size: 1.1rem;
+  color: #2f6e5c;
+  margin-top: 2rem;
+}
+
+.add-ons ul {
+  list-style: none;
+  padding: 0;
+}
+
+.add-ons li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 0;
+}
+
+.note {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 1rem;
+}
+
+.last-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.last-item-left {
+  width: 100% !important;
+}
+
+@media (max-width: 640px) {
+  .last-item {
+    flex-direction: column;
+  }
+}
+@media (max-width: 640px) {
+  .menu-container {
+    flex-direction: column;
+    margin-top: 4rem;
+
+  }
+}
